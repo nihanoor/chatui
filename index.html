@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chatbox {
+        width: 400px;
+        height: 400px;
+        background-color: rgb(175, 226, 175);
+        overflow: scroll;
+        position: relative; /* Ensure correct positioning */
+    }
+
+    .chat-date {
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .chat:not(:first-child) .chat-date {
+        top: 10px; /* Adjust this value based on the height of the date header */
+    }
+
+    .chat:not(:first-child) .messages {
+        margin-top: 10px; /* Adjust this value based on the height of the date header */
+    }
+</style>
+
+<body>
+    <div class="chatbox" style="margin-top: 70px;">
+        <div class="chat" style="padding: 10px;">
+            <h1> Chatbox</h1>
+            <hr>
+            <div class="chat-date">Today</div>
+            <div class="messages">
+                <p>heeloo</p>
+                <p style="text-align: right;">hi, how are you </p>
+                <p>Doing good</p>
+                <p style="text-align: right;">is there office today ?</p>
+                <p>Yup</p>
+                <p style="text-align: right;">okay</p>
+                <p>heeloo</p>
+                <p style="text-align: right;">hi, how are you </p>
+                <p>Doing good</p>
+            </div>
+        </div>
+
+        <div class="chat" style="padding: 10px;">
+            <div class="chat-date">Yesterday</div>
+            <div class="messages">
+                <p>heeloo</p>
+                <p style="text-align: right;">hi, how are you </p>
+                <p>Doing good</p>
+                <p style="text-align: right;">is there office today ?</p>
+                <p>Yup</p>
+                <p style="text-align: right;">okay</p>
+                <p>heeloo</p>
+                <p style="text-align: right;">hi, how are you </p>
+                <p>Doing good</p>
+            </div>
+        </div>
+
+        <div class="chat" style="padding: 10px;">
+            <div class="chat-date">Saturday</div>
+            <div class="messages">
+                <p>heeloo</p>
+                <p style="text-align: right;">hi, how are you </p>
+                <p>Doing good</p>
+                <p style="text-align: right;">is there office today ?</p>
+                <p>Yup</p>
+                <p style="text-align: right;">okay</p>
+                <p>heeloo</p>
+                <p style="text-align: right;">hi, how are you </p>
+                <p>Doing good</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
